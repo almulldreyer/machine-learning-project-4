@@ -1,14 +1,11 @@
 # app.py
 
-from flask import Flask, request , jsonify , render_template , redirect , url_for
-from flask_pymongo import PyMongo
-from flask_sqlalchemy import SQLAlchemy 
 from splinter import Browser
 from bs4 import BeautifulSoup
-from webdriver_manager.chrome import  ChromeDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
+import pandas as pd
 import requests
-import scrape_gambling
-import pymongo
+
 
 # Crate flask
 app = Flask(__name__)
@@ -27,10 +24,10 @@ def home():
 def index():
  
    # Find one record of data from the dataset
-    team_tables = mongo.db.team_tables.find_one()
+    ATLt2 = mongo.db.ATLt2.find_one()
 
     # Return template and data
-    return render_template("index.html", statdata = team_tables)
+    return render_template("index.html", statdata = ATLt2)
 
 @app.route("/scrape")
 def scrape():
@@ -46,12 +43,3 @@ def scrape():
 if __name__ == "__main__":
     app.run(debug=True)
 
-
-# /calculations path:
-
-# Win/Losses - determines number of wins, losses, and ties
-# Win Percentage - percentage of time a team has won
-# Previous Odds - 
-# Margin of Victory (Average) - avg margin of victory
-
-# Figuring out if it will be useful to rename and manipulate data here for a table? To get the results?
