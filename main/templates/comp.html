@@ -77,16 +77,32 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10">
-                <h1>Atlanta Hawks</h1>
+                <h1>Another Model</h1>
                 <hr>
-                        <img src="assets/ATL.png" alt="Max Temperature vs. Latitude" width="50">
-                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-                            accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
-                            cities.</p>
-                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
-                            we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the souce data
-                            and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and
-                            correlations witnesseed.</p>
+                <p>Using a Linear Regression Model with a target of Points rather than Win/Loss%</p>
+                <div class="row">
+                  <div class = "col-sm-2">
+                    
+                    <table class="dataframe">  <thead>    <tr style="text-align: right;">      <th></th>      <th>PTS</th>    </tr>    <tr>      <th>Team</th>      <th></th>    </tr>  </thead>  <tbody>    <tr>      <th>ATL</th>      <td>0.059</td>    </tr>    <tr>      <th>BOS</th>      <td>-0.029</td>    </tr>    <tr>      <th>CHA</th>      <td>0.004</td>    </tr>    <tr>      <th>CHI</th>      <td>-0.038</td>    </tr>    <tr>      <th>CLE</th>      <td>0.024</td>    </tr>    <tr>      <th>DAL</th>      <td>-0.107</td>    </tr>    <tr>      <th>DEN</th>      <td>0.029</td>    </tr>    <tr>      <th>DET</th>      <td>0.061</td>    </tr>    <tr>      <th>GSW</th>      <td>0.061</td>    </tr>    <tr>      <th>HOU</th>      <td>0.028</td>    </tr>    <tr>      <th>IND</th>      <td>0.019</td>    </tr>    <tr>      <th>LAC</th>      <td>-0.033</td>    </tr>    <tr>      <th>LAL</th>      <td>-0.036</td>    </tr>    <tr>      <th>MEM</th>      <td>-0.001</td>    </tr>    <tr>      <th>MIA</th>      <td>0.035</td>    </tr>    <tr>      <th>MIL</th>      <td>-0.011</td>    </tr>    <tr>      <th>MIN</th>      <td>-0.228</td>    </tr>    <tr>      <th>BKN/NJN</th>      <td>0.101</td>    </tr>    <tr>      <th>NOP</th>      <td>-0.042</td>    </tr>    <tr>      <th>NYK</th>      <td>0.027</td>    </tr>    <tr>      <th>OKC</th>      <td>0.075</td>    </tr>    <tr>      <th>ORL</th>      <td>-0.039</td>    </tr>    <tr>      <th>PHI</th>      <td>0.005</td>    </tr>    <tr>      <th>PHX</th>      <td>0.100</td>    </tr>    <tr>      <th>POR</th>      <td>0.049</td>    </tr>    <tr>      <th>SAC</th>      <td>-0.034</td>    </tr>    <tr>      <th>SAS</th>      <td>-0.022</td>    </tr>    <tr>      <th>TOR</th>      <td>-0.235</td>    </tr>    <tr>      <th>UTA</th>      <td>0.036</td>    </tr>    <tr>      <th>WAS</th>      <td>-0.043</td>    </tr>  </tbody></table>
+                    <br>
+                  </div>
+                  <br>
+                  <div class="col-md-8">
+                    <img src="assets/ptsmodel.png" alt="Graph for Combined Data Model" width="500">
+                    <hr>
+                    R-squared Training Score: -28.627135701902752
+                    <br>
+                    R-squared Testing Score: -29.044739596426446
+                    <br>
+                    MSE: 1.0001980677656577e-05   
+                    <br>
+                    RMSE: 5.0009903388282885e-06
+                    <br>
+                    <hr>
+                    
+                    
+                  </div>
+                </div>
                 
                 
             </div>
@@ -125,8 +141,8 @@
                 <a href="UTA.html"><img src="assets/UTA.png" alt="UTA" width="100"></a>
                 <a href="WAS.html"><img src="assets/WAS.png" alt="WAS" width="100"></a>
                 <hr>
-                <button type="button" class="btn btn-link" href="https://www.sportslogos.net/">All Logos via Sports Logos.net</button>
-                
+                <a href="https://www.sportslogos.net/" class="link-secondary">All Logos via Sports Logos.net</a>
+
             </div>
         </div>
     </div>
