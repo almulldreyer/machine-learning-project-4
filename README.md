@@ -20,10 +20,13 @@ We chose to analyze and model the stat and team data provided from http://basket
 ## Process
 ### Data Scraping and Cleaning
 We scraped all of our NBA team stats data from http://basketball-reference.com, using Pythons pandas library, BeautifulSoup, and Jupyter Notebook. From there we used a series of loops to scrape, clean, and store the data into a list.
-image of our scrape data
+image of our scrape data.
 
 ### Modeling the Data with ML
 For data modeling we ran our datasets through a RandomForestRegressor using SciKit-Learn with Win/Loss% as our target.
+
+##Linear Regression
+We wanted to try another model using Linear regression to assist with the team predictions by using Total Points for the season as our target.
 
 ### Creating Data Visualizations
 Data visualizations were created via Matplotlib, which shows our calculated prediction lines and actual data lines for win/loss%.
